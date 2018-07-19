@@ -3,6 +3,9 @@ require 'slack-ruby-client'
 
 # Load Slack app info into a hash called `config` from the environment variables assigned during setup
 # See the "Running the app" section of the README for instructions.
+
+set :port, 4040
+
 SLACK_CONFIG = {
   slack_client_id: ENV['SLACK_CLIENT_ID'],
   slack_api_secret: ENV['SLACK_API_SECRET'],
